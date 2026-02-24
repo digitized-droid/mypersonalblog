@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f1ece8;
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+            background: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #777;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 250px;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card.large {
+            grid-column: span 2;
+            grid-row: span 2;
+            padding: 0;
+        }
+
+        .card.tall {
+            grid-row: span 2;
+            padding: 0;
+        }
+
+        .card.wide {
+            grid-column: span 2;
+        }
+
+        .text-card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .text-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media(max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MY JOURNEY</h1>
+    <p>Becoming Better</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card large">
+            <img src="literature first pic.jpg" alt="Main Feature">
+        </div>
+
+        <div class="card text-card">
+            <h2>About This Journey</h2>
+            <p>
+                This is not about perfection — it’s about progress.
+                Every experience, whether challenging or rewarding,
+                has shaped who I am today. I’ve learned that growth
+                happens quietly, through consistent effort and reflection.
+            </p>
+        </div>
+
+        <div class="card tall">
+            <img src="literature second pic.jpg" alt="Side Image">
+        </div>
+
+        <div class="card text-card wide">
+		<h2>About Me</h2>
+            <p>
+               I am Eunimil DL. Mangona a student of the University of Rizal System - Morong Campus
+			   I always hated how slow i improve, in discussions, in arts, in speaking generally,
+			   in everything, beacuse i used to be proud on how fast i learn,  
+			   now i often Doubt myself whether if i'm going to improve, 
+			   whether i'm going to be better, but then i realized what am i doubting myself for? 
+			   like, this isn't me, the "me" will be proud of the little things i achieve,
+			   so i will be, for me.
+            </p>
+        </div>
+		
+        <div class="card tall">
+            <img src="literature third pic.jpg" alt="Tall Image">
+        </div>
+        
+        <div class="card">
+            <img src="literature fourth pic.jpg" alt="Gallery Image">
+        </div>
+
+        <div class="card text-card">
+            <h2>Learning Through Experience</h2>
+<p>
+    Some lessons come from success, others from setbacks.
+    Both are valuable.I’ve also learned that growth is rarely a solo journey,
+    the encouragement, advice, and unwavering support of friends
+    have lifted me in moments of doubt and reminded me of my strength.
+    Growth isn’t always visible in the moment,
+    but it builds character over time, especially when you don’t walk alone.
+</p>
+        </div>
+
+        <div class="card wide">
+            <img src="literature fifth pic.jpg" alt="Wide Image">
+        </div>
+
+        <div class="card text-card">
+            <h2>Milestones Along the Way</h2>
+            <p>
+                Every milestone represents effort and persistence.
+                Big or small, each achievement reminds me that
+                progress comes from consistency. The goal has never
+                been comparison, only growth.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="literature sixth pic.jpg" alt="Extra Image">
+        </div>
+
+        <div class="card text-card">
+            <h2>Looking Forward</h2>
+            <p>
+                The journey continues with new goals and new lessons.
+                I look ahead with curiosity and determination,
+                knowing that each step forward shapes a stronger,
+                wiser version of myself.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+   Eunimil Deleon Mangona © 2026 My Journey — Progress Over Perfection
+</footer>
+
+</body>
+</html>
